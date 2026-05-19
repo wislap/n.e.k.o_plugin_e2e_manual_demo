@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "N.E.K.O: check e2e_manual_demo",
+      "type": "shell",
+      "command": "uv run python -m plugin.neko_plugin_cli.cli check e2e_manual_demo",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "N.E.K.O: check -r e2e_manual_demo",
+      "type": "shell",
+      "command": "uv run python -m plugin.neko_plugin_cli.cli check -r e2e_manual_demo",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "N.E.K.O: build e2e_manual_demo",
+      "type": "shell",
+      "command": "uv run python -m plugin.neko_plugin_cli.cli build e2e_manual_demo",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

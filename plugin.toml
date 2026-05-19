@@ -1,0 +1,14 @@
+[plugin]
+id = "e2e_manual_demo"
+name = "e2e_manual_demo"
+version = "0.1.0"
+type = "plugin"
+entry = "plugin.plugins.e2e_manual_demo:E2eManualDemoPlugin"
+
+[plugin.sdk]
+recommended = ">=0.1.0,<0.2.0"
+supported = ">=0.1.0,<0.3.0"
+
+[plugin_runtime]
+enabled = true
+auto_start = false
